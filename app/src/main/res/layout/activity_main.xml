@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.tito.quizeapp.MainActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout"
+            android:background="@android:color/background_light">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test_your_japanese_knowledge"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:textSize="16sp"
+                    android:id="@+id/title_of_quiz"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_what_s_the_meaning_of_ohayou"
+                android:layout_margin="16dp"
+                android:id="@+id/question1"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/hello"
+                android:id="@+id/question_1_option_1"/>
+
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/goodbye"
+                android:id="@+id/question_1_option_2"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/good_morning"
+                android:id="@+id/question_1_option_3"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_what_s_the_meaning_of_watashi"
+                android:layout_margin="16dp"/>
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/group1">
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/he"
+                    android:id="@+id/question_2_option_1"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/you"
+                    android:id="@+id/question_2_option_2"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/i"
+                    android:id="@+id/question_2_option_3"/>
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_what_s_the_right_meaning_for_thank_you"
+                android:layout_margin="16dp"/>
+
+        <EditText
+                style="@style/styleForOptions"
+                android:inputType="textCapWords"
+                android:hint="@string/your_answer_please"
+                android:id="@+id/question_3"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_what_s_the_meaning_of_name"
+                android:layout_margin="16dp"/>
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/group2">
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/name"
+                    android:id="@+id/question_4_option_1"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/bokuwa"
+                    android:id="@+id/question_4_option_2"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/hanashi"
+                    android:id="@+id/question_4_option_3"/>
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5_what_s_the_meaning_of_cat"
+                android:layout_margin="16dp"/>
+
+        <EditText
+                style="@style/styleForOptions"
+                android:inputType="textCapWords"
+                android:hint="@string/your_answer_please"
+                android:id="@+id/question_5"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_what_s_the_meaning_of_desu"
+                android:layout_margin="16dp"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/i_m"
+                android:id="@+id/question_6_option_1"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/to_be"
+                android:id="@+id/question_6_option_2"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/me"
+                android:id="@+id/question_6_option_3"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7_what_s_the_meaning_of_akai"
+                android:layout_margin="16dp"/>
+
+
+        <EditText
+                style="@style/styleForOptions"
+                android:inputType="textCapWords"
+                android:hint="@string/your_answer_please"
+                android:id="@+id/question_7"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_8_what_s_the_meaning_of_eat"
+                android:layout_margin="16dp"/>
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/group3">
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/nomimasu"
+                    android:id="@+id/question_8_option_1"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/tabemasu"
+                    android:id="@+id/question_8_option_2"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/mimasu"
+                    android:id="@+id/question_8_option_3"/>
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9_what_s_the_meaning_of_it_s_good"
+                android:layout_margin="16dp"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/where"
+                android:id="@+id/question_9_option_1"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/ii_yo"
+                android:id="@+id/question_9_option_2"/>
+
+        <CheckBox
+                style="@style/styleForOptions"
+                android:text="@string/ii_desu_yo"
+                android:id="@+id/question_9_option_3"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10_what_s_the_meaning_of_tomorrow"
+                android:layout_margin="16dp"/>
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/group4">
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/kyou"
+                    android:id="@+id/question_10_option_1"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/konya"
+                    android:id="@+id/question_10_option_2"/>
+
+            <RadioButton
+                    style="@style/styleForOptions"
+                    android:text="@string/ashita"
+                    android:id="@+id/question_10_option_3"/>
+
+        </RadioGroup>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/submit"
+                    android:layout_centerVertical="true"
+                    android:onClick="submitResult"
+                    android:id="@+id/button"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reset"
+                    android:id="@+id/resetAnswers"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    android:onClick="resetAll"
+
+
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
